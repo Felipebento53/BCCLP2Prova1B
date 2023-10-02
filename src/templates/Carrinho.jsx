@@ -1,4 +1,18 @@
+import { useState } from "react";
+import Produto from "./Produto";
+
 export default function Carrinho(props) {
+
+    const [carrinho, setCarrinho] = useState([]); 
+
+ 
+    const adicionarAoCarrinho = (prod) => {
+    setCarrinho([...carrinho, prod]);
+  };
+
+    
+
+
     return (
         <div style={{
             display: 'flex',

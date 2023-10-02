@@ -1,6 +1,8 @@
 import { useState } from "react";
 export default function Produto(props){
     const [quantidade, setQuantidade] = useState(1);
+    
+
     return(
         <div style={{
             width: '200px',
@@ -64,7 +66,7 @@ export default function Produto(props){
                     min={1}/>
             </div>
             <div id='botao-comprar'>
-                <button 
+                <button
                     style={{
                         backgroundColor: 'rgb(255,60,60)',
                         color: 'white',
@@ -73,10 +75,13 @@ export default function Produto(props){
                         height: '40px',
                         width: '120px',
                     }}
-                    type='button'>
+                    type='button'
+                   >
+                    
                         Comprar
                 </button>
             </div>
+           
         </div>
     )
 }
