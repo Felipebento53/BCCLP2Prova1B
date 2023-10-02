@@ -1,5 +1,8 @@
-export default function Carrinho(props) {
+import { useState } from "react";
 
+export default function Carrinho(props) {
+    
+    
 
     return (
         <div style={{
@@ -88,3 +91,5 @@ export default function Carrinho(props) {
 
     );
 }
+
+

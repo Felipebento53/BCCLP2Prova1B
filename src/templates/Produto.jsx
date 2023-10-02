@@ -3,12 +3,7 @@ export default function Produto(props){
 
     const [quantidade, setQuantidade] = useState(1);
 
-    const addToCart = () => {
-        // Chame uma função passada do componente pai para adicionar o produto ao carrinho
-        props.onAddToCart(props.produto);
-      };
     
-
      
     return(
         <div style={{
@@ -82,7 +77,7 @@ export default function Produto(props){
                         height: '40px',
                         width: '120px',
                     }}
-                    type='button' onClick={addToCart}>
+                    type='button'>
                     
                         Comprar
                 </button>
